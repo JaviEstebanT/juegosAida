@@ -24,6 +24,12 @@ def licencia():
 	 	'OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.')
 	licencia.pack()
 
+def acerca():
+	acerca=Label(raiz, text='Vesión 0.1\n'+
+		'\n'+
+		'Programa con juegos infantiles educativos')
+	acerca.pack()
+
 raiz=Tk()
 raiz.title("Juegos reunidos Aida")
 raiz.iconbitmap("imagenes\patio-de-recreo.ico")
@@ -43,7 +49,7 @@ menuJuegos.add_command(label="Sombras")
 
 menuAyuda=Menu(barraMenu, tearoff=0)
 barraMenu.add_cascade(label="Ayuda", menu=menuAyuda)
-menuAyuda.add_command(label="Acerca de...")
+menuAyuda.add_command(label="Acerca de...", command=acerca)
 menuAyuda.add_command(label="Instrucciones")
 menuAyuda.add_command(label="Licencia", command=licencia)
 
