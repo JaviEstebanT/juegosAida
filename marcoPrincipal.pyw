@@ -6,6 +6,12 @@ def salir():
 	if valor==True:
 		raiz.destroy()
 
+def licencia():
+	marcoLicencia=Frame(raiz)
+	marcoLicencia.pack()
+	explicacionLicencia=Label(marcoLicencia, text="Aquí copiaré los terminos de la licencia")
+	explicacionLicencia.pack()
+
 raiz=Tk()
 raiz.title("Juegos reunidos Aida")
 raiz.iconbitmap("imagenes\patio-de-recreo.ico")
@@ -27,7 +33,7 @@ menuAyuda=Menu(barraMenu, tearoff=0)
 barraMenu.add_cascade(label="Ayuda", menu=menuAyuda)
 menuAyuda.add_command(label="Acerca de...")
 menuAyuda.add_command(label="Instrucciones")
-menuAyuda.add_command(label="Licencia")
+menuAyuda.add_command(label="Licencia", command=licencia)
 
 
 raiz.mainloop()
