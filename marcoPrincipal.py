@@ -25,7 +25,7 @@ def licencia():
 	licencia.pack()
 
 def acerca():
-	acerca=Label(raiz, text='Vesión 0.1\n'+
+	acerca=Label(raiz, text='Vesión 0.2\n'+
 		'\n'+
 		'Programa con juegos infantiles educativos')
 	acerca.pack()
